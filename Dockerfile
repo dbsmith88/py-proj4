@@ -7,6 +7,4 @@ RUN wget --no-check-certificate --content-disposition https://github.com/OSGeo/p
     && tar -xvf /tmp/proj-${PROJ4_VERSION}.tar.gz -C /tmp \
     && cd /tmp/proj-${PROJ4_VERSION} \
     && ./configure --prefix=/usr \
-    && make \
-    && make install \
-    && rm -rf /tmp/proj-${PROJ4_VERSION}
+    && make
